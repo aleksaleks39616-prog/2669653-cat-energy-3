@@ -2,6 +2,7 @@
 * Студент: [Александр Прокопчук](https://up.htmlacademy.ru/adaptive-individual/3/user/2669653).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
