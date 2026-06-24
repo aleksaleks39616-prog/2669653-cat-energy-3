@@ -11,15 +11,14 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
+    <a class="main-header__logo" href="#">
       <img src="#" width="174" height="50" alt="Логотип проекта">
     </a>
     <button class="main-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--active" href="#">ГЛАВНАЯ</a>
+          <a class="navigation__link navigation__link--active" href="index.html">ГЛАВНАЯ</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
@@ -35,7 +34,7 @@
       <h1 class="product-view__title">Функциональное
         питание для котов</h1>
       <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-      <a class="button-programm" href="#">Подобрать программу</a>
+      <a class="link-programm" href="#">Подобрать программу</a>
       <img class="img-product" src="#" width="709" height="609" alt="Изображение товара">
     </section>
     <section class="advanteges">
@@ -43,12 +42,12 @@
         <li class="advanteges__item">
           <h2 class="advanteges__title">Похудение</h2>
           <p class="advanteges__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <p class="advanteges__catalog">КАТАЛОГ SLIM</p>
+          <a class="advanteges__link-slim" href="#">КАТАЛОГ SLIM</a>
         </li>
         <li class="advanteges__item">
           <h2 class="advanteges__title">Набор массы</h2>
           <p class="advanteges__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <p class="advanteges__catalog">КАТАЛОГ PRO</p>
+          <a class="advanteges__link-pro" href="#">КАТАЛОГ PRO</a>
         </li>
       </ul>
     </section>
@@ -101,13 +100,15 @@
           </dt>
           <dd class="stats__description">затрачено времени</dd>
         </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            ЗАТРАТЫ НА ПИТАНИЕ
-          </dt>
-          <dd class="stats__description">15 000 РУБ.</dd>
-        </div>
       </dl>
+      <div class="stats__item">
+        <span class="stats__number">
+          ЗАТРАТЫ НА ПИТАНИЕ
+        </span>
+        <span class="stats__description">15 000 РУБ.
+        </span>
+      </div>
+
     </section>
     <div class="slider">
       <div class="slider__slide slider__slide--active">
@@ -116,7 +117,7 @@
           <img class="slider__image" src="#" alt="Неактивный слайд" width="560" height="512">
         </div>
       </div>
-      <button class="slider__button slider__button--change" type="button">Изменить изображение</button>
+      <button class="slider__button slider__button--change" type="button"><span class="visually-hidden">Изменить изображение</span></button>
     </div>
     <footer class="main-footer">
       <div class="main-footer__contacts">
