@@ -258,7 +258,11 @@
         <p class="main-footer__contacts-adress">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
-        <img src="#" alt="Карта с указанием адреса" width="768" height="400">
+        <picture>
+          <source type="image/png" media="(min-width:1440px)" srcset="images/location-desktop@1x.png, images/location-desktop@2x.png 2x" width="1440" height="400">
+          <source type="image/png" media="(min-width:768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x" width="768" height="400">
+          <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с указанием адреса" width="320" height="362">
+        </picture>
       </div>
       <div class="social">
         <a class="social__logo-link" href="index.html">
