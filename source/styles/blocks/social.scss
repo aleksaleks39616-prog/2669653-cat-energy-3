@@ -1,0 +1,32 @@
+.social__link::before {
+  content: "";
+  fill: #666666;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social__link--vkontakte::before {
+  background-image: url("../icons/vkontakte.svg");
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
+.social__link--youtube::before {
+  background-image: url("../icons/youtube.svg");
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
+.social__link--telegram::before {
+  background-image: url("../icons/telegram.svg");
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
+.social__list {
+  list-style: none;
+}
