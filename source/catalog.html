@@ -16,10 +16,14 @@
 <body class="page-body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="#" width="174" height="50" alt="Логотип проекта">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1440px)" width="70" height="59" srcset="images/logo-cat-desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-cat-tablet.svg">
+        <img class="logo-image" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип с котом">
+      </picture>
+      <img class="logo-text" src="images/header-logo.svg" width="101" height="18" alt="Кэт Энерджи">
     </a>
-    <button class="main-header__toggle" type="button"><span class="visually-hidden">Меню</span></button>
-
+    <button class="main-header__toggle" type="button"><span class="visually-hidden">.</span></button>
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
