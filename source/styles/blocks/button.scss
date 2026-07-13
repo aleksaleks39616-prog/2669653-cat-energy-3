@@ -36,7 +36,24 @@
   width: 280px;
   min-height: 40px;
   padding: 10px 64px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: block;
+  box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .button--programm {
+    background-color: rgba(104, 183, 56, 0.85);
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 240px;
+    padding: 10px 26px;
+    display: block;
+    box-sizing: border-box;
+  }
+}
+
 
 .button-plus {
   background-image: url("../../icons/plus.svg");

@@ -1,3 +1,6 @@
 .page-body {
+  display: flex;
+  flex-direction: column;
   font-family: "Lato", sans-serif;
+  min-height: 100%;
 }
