@@ -1,9 +1,8 @@
-.button-long {
+.button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  padding: 10px 285px;
-  font-style: normal;
+  padding: 10px 25px;
   line-height: 20px;
   background-color: #68b738;
   color: #ffffff;
@@ -12,4 +11,38 @@
   display: block;
   width: 280px;
   min-height: 40px;
+  text-align: center;
 }
+
+.button--product {
+  padding: 10px 109px;
+}
+
+.button--long {
+  padding: 10px 109px;
+}
+
+.button--grey {
+  background-color: #f2f2f2;
+  color: #444444;
+  padding: 10px 95px;
+}
+
+.button--programm {
+  background-color: rgba(104, 183, 56, 0.85);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 280px;
+  min-height: 40px;
+  padding: 10px 64px;
+}
+
+.button-plus {
+  background-image: url("../../icons/plus.svg");
+  background-color: #ffffff;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+

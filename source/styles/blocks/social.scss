@@ -30,3 +30,16 @@
 .social__list {
   list-style: none;
 }
+
+.social__htmlacademy-link::after {
+  content: "";
+  background-image: url("../../icons/logo-html.svg");
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
+.social__htmlacademy-link {
+  color: #444444;
+  text-decoration: none;
+}
