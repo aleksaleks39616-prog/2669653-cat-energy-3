@@ -72,3 +72,12 @@
   height: 12px;
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__item--slim {
+    display: grid;
+    grid-template-columns: 340px 200px;
+    grid-template-rows: auto auto;
+    width: 708px
+  }
+}
