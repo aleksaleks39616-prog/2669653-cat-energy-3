@@ -1,3 +1,8 @@
+
+.main-footer__contacts {
+  display: flex;
+}
+
 .main-footer__contacts-text {
   font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
@@ -16,4 +21,32 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-footer__contacts {
+    display: flex;
+    gap: 308px;
+  }
+
+  .main-footer__contacts-text {
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #111111;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+
+  .main-footer__contacts-adress {
+    font-family: "Lato", "Arial", sans-serif;
+    color: #444444;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
