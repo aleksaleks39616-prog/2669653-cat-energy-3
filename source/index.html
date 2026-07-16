@@ -26,6 +26,7 @@
       <button class="main-header__toggle" type="button"><span class="visually-hidden">.</span></button>
     </div>
     <div class="container">
+
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -45,16 +46,22 @@
   <main class="main-container">
     <div class="container">
       <section class="product-view">
-        <h1 class="product-view__title">Функциональное
-          питание для котов</h1>
-        <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-        <a class="button button--programm" href="#">Подобрать программу</a>
+        <div class="product-container">
+          <h1 class="product-view__title">Функциональное
+            питание для котов</h1>
+          <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
+          <a class="button button--programm" href="#">Подобрать программу</a>
+        </div>
         <picture>
           <source type="image/png" media="(min-width:1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
           <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
           <img class="hero-image" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
         </picture>
       </section>
+    </div>
+    </section>
+    </div>
+    </section>
     </div>
     <div class="container">
       <section class="advantages">
@@ -72,12 +79,12 @@
         </ul>
       </section>
     </div>
-    <section class="product-details">
+    <section class="product-details container">
       <h2 class="product-details__title">Как это работает</h2>
       <ol class="product-details__list">
         <li class="product-details__item product-details__item--group1">
           <div class="product-details__description">
-            <p class="product-details__text">Функциональное питание
+            <p class="product-details__text--cont1">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </div>
@@ -103,32 +110,34 @@
         </li>
       </ol>
     </section>
-    <section class="stats">
-      <h2 class="stats__title">Живой пример</h2>
-      <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__number">
-            5 КГ
-          </dt>
-          <dd class="stats__description">снижение веса</dd>
+    <div class="container">
+      <section class="stats">
+        <h2 class="stats__title">Живой пример</h2>
+        <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="stats-table">
+          <dl class="stats__list">
+            <div class="stats__item">
+              <dt class="stats__number">
+                5 КГ
+              </dt>
+              <dd class="stats__description">снижение <br> веса</dd>
+            </div>
+            <div class="stats__item">
+              <dt class="stats__number">
+                60 ДНЕЙ
+              </dt>
+              <dd class="stats__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <span class="stats__price">
+            ЗАТРАТЫ НА ПИТАНИЕ:15 000 РУБ.
+          </span>
+          <span class="stats__value">
+          </span>
         </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            60 ДНЕЙ
-          </dt>
-          <dd class="stats__description">затрачено времени</dd>
-        </div>
-      </dl>
-      <div class="stats__item">
-        <span class="stats__number">
-          ЗАТРАТЫ НА ПИТАНИЕ
-        </span>
-        <span class="stats__description">15 000 РУБ.
-        </span>
-      </div>
+      </section>
+    </div>
 
-    </section>
     <div class="slider">
       <div class="slider__slide slider__slide--active">
         <div class="slider__slide">
@@ -147,19 +156,20 @@
       </div>
     </div>
     <footer class="main-footer">
-      <div class="main-footer__contacts">
+      <div class="main-footer__contacts container">
         <p class="main-footer__contacts-text">Приглашаем
           к сотрудничеству
           дилеров!</p>
         <p class="main-footer__contacts-adress">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
-        <picture>
-          <source type="image/png" media="(min-width:1440px)" srcset="images/location-desktop@1x.png, images/location-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width:768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x" width="768" height="400">
-          <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с указанием адреса" width="320" height="362">
-        </picture>
       </div>
+      <picture>
+        <source type="image/png" media="(min-width:1440px)" srcset="images/location-desktop@1x.png, images/location-desktop@2x.png 2x" width="1440" height="400">
+        <source type="image/png" media="(min-width:768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x" width="768" height="400">
+        <img src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с указанием адреса" width="320" height="362">
+      </picture>
+
       <div class="social">
         <a class="social__logo-link" href="index.html">
           <img class="social__logo-text" src="images/footer-logo.svg" width="128" height="24" alt="Кэт Энерджи">
