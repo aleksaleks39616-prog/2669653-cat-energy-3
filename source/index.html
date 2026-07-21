@@ -49,18 +49,19 @@
     <section class="product-view ">
 
       <div class="container">
-
-        <h1 class="product-view__title">Функциональное
-          питание для котов</h1>
-        <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
-        <a class="button button--programm" href="#">Подобрать программу</a>
-
-        <picture>
-          <source type="image/png" media="(min-width:1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
-          <img class="hero-image" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
-        </picture>
-      </div>
+        <div class="product-wrapper">
+          <div class="product-wrapper-text">
+            <h1 class="product-view__title">Функциональное
+              питание для котов</h1>
+            <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
+            <a class="button button--programm" href="#">Подобрать программу</a>
+          </div>
+          <picture>
+            <source type="image/png" media="(min-width:1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+            <img class="hero-image" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -111,8 +112,9 @@
         </li>
       </ol>
     </section>
-    <div class="container">
-      <section class="stats">
+
+    <section class="stats">
+      <div class="container">
         <h2 class="stats__title">Живой пример</h2>
         <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
         <div class="stats-table">
@@ -135,7 +137,8 @@
           </span>
 
         </div>
-      </section>
+      </div>
+    </section>
     </div>
 
     <div class="slider">
@@ -155,8 +158,8 @@
         <button class="slider__button slider__button--change" type="button"><span class="visually-hidden">Изменить изображение</span></button>
       </div>
     </div>
-    <footer class="main-footer continer">
-      <div class="main-footer__contacts">
+    <footer class="main-footer">
+      <div class="main-footer__contacts container">
         <p class="main-footer__contacts-text">Приглашаем
           к сотрудничеству
           дилеров!</p>
@@ -171,30 +174,32 @@
       </picture>
 
       <div class="social">
-        <a class="social__logo-link" href="index.html">
-          <img class="social__logo-text" src="images/footer-logo.svg" width="128" height="24" alt="Кэт Энерджи">
-        </a>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграмм</span>
-            </a>
-          </li>
-        </ul>
-        <a class="social__htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span class="social-text">HTML Academy</span>
-          <span class="visually-hidden">Логотип Академии</span>
-        </a>
+        <div class="container">
+          <a class="social__logo-link" href="index.html">
+            <img class="social__logo-text" src="images/footer-logo.svg" width="128" height="24" alt="Кэт Энерджи">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span>
+              </a>
+            </li>
+          </ul>
+          <a class="social__htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="social-text">HTML Academy</span>
+            <span class="visually-hidden">Логотип Академии</span>
+          </a>
+        </div>
       </div>
     </footer>
   </main>
