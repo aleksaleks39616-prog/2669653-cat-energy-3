@@ -13,3 +13,16 @@
   font-weight: 400;
   line-height: 20px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .banner {
+    color: #ffffff;
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 707px;
+    height: 200px;
+    gap: 264px;
+    align-items: center;
+  }
+}
+

@@ -7,17 +7,6 @@
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  .main-header__toggle {
-    display: none;
-  }
-
-  .main-header {
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
-  }
-}
 
 .main-header__logo-image:hover {
   opacity: 0.8;
@@ -25,5 +14,35 @@
 
 .main-header__logo-image:active {
   opacity: 0.6;
+}
+
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-header__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 

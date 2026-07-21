@@ -1,4 +1,10 @@
 
+@media (max-width: $mobile-width) {
+  .navigation {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .navigation__list {
     margin: 0;
@@ -33,8 +39,3 @@
   text-decoration: none;
 }
 
-@media (max-width: $mobile-width) {
-  .navigation__list {
-    display: none;
-  }
-}
