@@ -44,12 +44,9 @@
 }
 
 .stats__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 7px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
   width: 124px;
-  height: 70px;
 }
 
 .stats__money {
