@@ -1,4 +1,9 @@
 .banner {
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-position-x: 101px;
+  background-position-y: 60px;
   color: #ffffff;
   background-color: rgba(104, 183, 56, 0.85);
   width: 280px;
@@ -12,17 +17,64 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding: 186px 61px 43px 58px;
+  display: flex;
+  width: 165px;
+  text-align: center;
+  align-items: center;
+  margin: 0;
 }
 
 
 @media (min-width: $tablet-width) {
   .banner {
+    background-image: url("../../icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 82px;
+    background-position-x: 77px;
+    background-position-y: 57px;
     color: #ffffff;
     background-color: rgba(104, 183, 56, 0.85);
     width: 707px;
     height: 200px;
-    gap: 264px;
+  }
+
+  .banner__text {
+    font-family: "Lato", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 165px;
+    text-align: center;
     align-items: center;
+    margin: 0;
+    padding: 71px 125px 69px 264px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .banner {
+    background-image: url("../../icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 80px 83px;
+    background-position-x: 83px;
+    background-position-y: 56px;
+    color: #ffffff;
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 245px;
+    height: 288px;
+  }
+
+  .banner__text {
+    font-family: "Lato", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 185px 42px 43px;
+    box-sizing: border-box;
+  }
+}
