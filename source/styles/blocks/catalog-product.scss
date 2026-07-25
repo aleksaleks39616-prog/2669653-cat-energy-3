@@ -9,6 +9,12 @@
 }
 
 .catalog-product__link {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.catalog-product__link-name {
   font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
   font-size: 16px;
@@ -115,7 +121,7 @@
     margin-bottom: 41px;
   }
 
-  .catalog-product__link {
+  .catalog-product__link-name {
     font-family: "Oswald", "Arial", sans-serif;
     color: #222222;
     font-size: 16px;
