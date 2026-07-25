@@ -19,25 +19,6 @@
   box-sizing: border-box;
 }
 
-.map-iframe {
-  border: none;
-  display: block;
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .map-iframe {
-    height: 400px;
-    width: 100%;
-  }
-}
-
-@media (min-width: $desktope-width) {
-  .map-iframe {
-    height: 400px;
-    width: 100%;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .container {
