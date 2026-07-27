@@ -172,6 +172,7 @@
 
   .stats-table {
     display: flex;
+    margin-bottom: 100px;
   }
 }
 
@@ -186,6 +187,16 @@
     line-height: 60px;
   }
 
+  .stats__money {
+    display: flex;
+    gap: 63px;
+    margin-top: 55px;
+    margin-bottom: 75px;
+    text-align: start;
+    padding: 0;
+    margin-left: 0;
+  }
+
   .stats__text {
     font-family: "Lato", "Arial", sans-serif;
     color: #444444;
@@ -193,6 +204,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    width: 436px;
   }
 
   .stats__number {
@@ -218,12 +230,7 @@
   }
 
   .stats__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 7px;
-    width: 124px;
-    height: 70px;
+    width: 162px;
   }
 
   .stats__price {
@@ -238,7 +245,9 @@
   }
 
   .stats-table {
-    display: flex;
+    display: grid;
+    justify-content: start;
+    margin-top: 69px;
   }
 }
 

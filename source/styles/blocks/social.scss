@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-height: 240px;
 }
 
 .social__wrapper::after {
@@ -89,18 +88,21 @@
 }
 
 .social__logo-link {
-  margin-left: 76px;
+  justify-content: center;
+  display: flex;
 }
 
 @media (min-width: $tablet-width) {
   .social {
     background-color: #f2f2f2;
-    padding-top: 40px;
+    padding-top: 55px;
+    min-height: 147px;
   }
 
   .social__wrapper {
-
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .social__wrapper::after {
@@ -175,11 +177,6 @@
   .social__htmlacademy-link {
     color: #444444;
     text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .social__logo-link {
-    margin-left: 76px;
+    gap: 23px;
   }
 }
