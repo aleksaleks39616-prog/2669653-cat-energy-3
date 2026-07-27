@@ -74,13 +74,15 @@
   }
 
   .button--programm {
-    background-color: rgba(104, 183, 56, 0.85);
+    background-color: #68b738;
     color: #ffffff;
     text-transform: uppercase;
-    width: 240px;
+    width: 242px;
     padding: 10px 26px;
     display: block;
     box-sizing: border-box;
+    position: absolute;
+    top: 320px;
   }
 }
 
