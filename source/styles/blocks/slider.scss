@@ -1,3 +1,18 @@
 .slider {
   background-color: #eaeaea;
 }
+
+.slider__picture {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.slider-pictures {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.slider-pictures--before {
+  z-index: 2;
+}

@@ -1,5 +1,4 @@
 
-
 .main-header__toggle {
   background-image: url("../../icons/menu.svg");
   background-repeat: no-repeat;
@@ -11,24 +10,24 @@
   cursor: pointer;
 }
 
-.main-open .navigation {
+.main-header__navigation {
   display: block;
 }
 
-.main-open .main-header__toggle {
+.main-header--open .main-header__toggle {
   background-image: url("../../icons/cross.svg");
   background-size: 18px 18px;
   background-position: center;
 }
 
-.main-open .navigation__item {
+.main-header--open .navigation__item {
   text-align: center;
   margin: 0;
   padding: 20px 0;
   position: relative;
 }
 
-.main-open .navigation__item::before {
+.main-header--open .navigation__item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -51,7 +50,6 @@
   display: flex;
   justify-content: space-between;
 }
-
 
 @media (min-width: $desktop-width) {
   .main-header__inner {

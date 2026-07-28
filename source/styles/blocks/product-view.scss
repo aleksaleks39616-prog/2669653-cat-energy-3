@@ -114,4 +114,13 @@
   .product-wrapper {
     padding-left: 90px;
   }
+
+  .product-wrapper-text {
+    position: relative;
+  }
+
+  .product-picture {
+    display: flex;
+    justify-content: end;
+  }
 }
