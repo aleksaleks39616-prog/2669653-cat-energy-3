@@ -2,64 +2,65 @@
   .main-header__navigation {
     display: none;
   }
-}
-
-.main-header--close .main-header__navigation {
-  display: none;
-}
 
 
-.main-header .main-header__toggle {
-  background-image: url("../../icons/menu.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  width: 24px;
-  min-height: 24px;
-  background-color: #ffffff;
-  cursor: pointer;
-  display: none;
-}
-
-.main-header--close .main-header__toggle {
-  background-image: url("../../icons/menu.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-  width: 24px;
-  min-height: 24px;
-  background-color: #ffffff;
-  cursor: pointer;
-  display: block;
-}
+  .main-header--close .main-header__navigation {
+    display: none;
+  }
 
 
-.main-header .main-header__cross {
-  background-image: url("../../icons/cross.svg");
-  background-size: 18px 18px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  background-color: #ffffff;
-  cursor: pointer;
-  display: none;
-}
+  .main-header .main-header__toggle {
+    background-image: url("../../icons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    min-height: 24px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: none;
+  }
 
-.main-header .main-header__navigation-item {
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  position: relative;
-}
+  .main-header--close .main-header__toggle {
+    background-image: url("../../icons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    min-height: 24px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: block;
+  }
 
-.main-header .main-header__navigation-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #e0e0e0;
+
+  .main-header .main-header__cross {
+    background-image: url("../../icons/cross.svg");
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: none;
+  }
+
+  .main-header .main-header__navigation-item {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .main-header .main-header__navigation-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
 }
 
 .main-header__logo-image:hover {
