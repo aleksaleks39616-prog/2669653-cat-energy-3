@@ -45,7 +45,6 @@
   box-sizing: border-box;
 }
 
-
 .button-plus {
   background-image: url("../../icons/plus.svg");
   background-color: #ffffff;
@@ -60,7 +59,7 @@
   .button--product {
     width: 250px;
     box-sizing: border-box;
-    margin-bottom: 100px;
+
     margin-top: 32px;
     margin-left: 37px;
   }
@@ -82,14 +81,30 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 320px;
+    top: 335px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .button--long {
     box-sizing: border-box;
     width: 240px;
     margin-top: 10px;
+  }
+
+  .button--programm {
+    background-color: #68b738;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 242px;
+    padding: 10px 26px;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .button--product {
+    width: 169px;
+    box-sizing: border-box;
   }
 }
