@@ -59,7 +59,7 @@
   .button--product {
     width: 250px;
     box-sizing: border-box;
-    margin-bottom: 100px;
+
     margin-top: 32px;
     margin-left: 37px;
   }
@@ -81,7 +81,7 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    top: 220px;
+    top: 335px;
   }
 }
 
@@ -101,6 +101,10 @@
     padding: 10px 26px;
     display: block;
     box-sizing: border-box;
-    position: static;
+  }
+
+  .button--product {
+    width: 169px;
+    box-sizing: border-box;
   }
 }

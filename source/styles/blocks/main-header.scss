@@ -1,3 +1,8 @@
+@media (max-width: $mobile-width-only) {
+  .main-header .main-header__navigation {
+    display: none;
+  }
+}
 
 .main-header__toggle {
   background-image: url("../../icons/menu.svg");
@@ -10,24 +15,39 @@
   cursor: pointer;
 }
 
-.main-header__navigation {
+.main-header--open .main-header__navigation {
   display: block;
 }
 
+
+.main-header .main-header__cross {
+  display: none;
+}
+
+
 .main-header--open .main-header__toggle {
+  display: none;
+}
+
+.main-header--open .main-header__cross {
   background-image: url("../../icons/cross.svg");
   background-size: 18px 18px;
   background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: none;
 }
 
-.main-header--open .navigation__item {
+.main-header--open .main-header__navigation-item {
   text-align: center;
   margin: 0;
   padding: 20px 0;
   position: relative;
 }
 
-.main-header--open .navigation__item::before {
+.main-header--open .main-header__navigation-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -58,6 +78,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .main-header__cross {
+    display: none;
+  }
 }
 
 
@@ -71,6 +95,10 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .main-header__cross {
+    display: none;
   }
 }
 
