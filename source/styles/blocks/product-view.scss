@@ -25,7 +25,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%, #ffffff 100%), url("../../images/background-image-mobile.png");
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%, #ffffff 100%), url("../../images/background-mobile-index@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -80,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .product-view {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
   }
 
   .product-view__title {
@@ -111,7 +113,7 @@
   .product-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start; /* элементы выравниваются по верху */
+    align-items: flex-start;
     position: relative;
   }
 }

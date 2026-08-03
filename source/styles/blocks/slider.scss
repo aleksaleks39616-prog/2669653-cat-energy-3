@@ -23,3 +23,34 @@
   z-index: 1;
   mask-image: linear-gradient(to right, #000000 50%, transparent 50%);
 }
+
+@media (min-width: $tablet-width) {
+  .slider__picture {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .slider-pictures {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .slider-pictures--after {
+    z-index: 2;
+    background-color: #eaeaea;
+    mask-image: linear-gradient(to left, #000000 50%, transparent 50%);
+  }
+
+  .slider-pictures--before {
+    z-index: 1;
+    background-color: #eaeaea;
+    mask-image: linear-gradient(to right, #000000 50%, transparent 50%);
+  }
+
+  .slider__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
