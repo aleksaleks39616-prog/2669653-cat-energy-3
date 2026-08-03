@@ -45,6 +45,23 @@
     display: none;
   }
 
+  .main-header--open {
+    position: fixed;
+    z-index: 999;
+  }
+
+  .main-header--open .main-header__cross {
+    background-image: url("../../icons/cross.svg");
+    background-size: 18px 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: block;
+  }
+
+
   .main-header .main-header__navigation-item {
     text-align: center;
     margin: 0;
