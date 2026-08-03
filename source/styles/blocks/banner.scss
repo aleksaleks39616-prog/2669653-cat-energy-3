@@ -1,14 +1,23 @@
 .banner {
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../../images/background-mobile-catalog@2x.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.banner::before {
+  content: "";
+  display: block;
   background-image: url("../../icons/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 78px 80px;
-  background-position-x: 101px;
-  background-position-y: 60px;
-  color: #ffffff;
-  background-color: rgba(104, 183, 56, 0.85);
-  width: 280px;
-  height: 290px;
+  height: auto;
+  background-position: center;
 }
+
 
 .banner__text {
   font-family: "Lato", "Arial", sans-serif;

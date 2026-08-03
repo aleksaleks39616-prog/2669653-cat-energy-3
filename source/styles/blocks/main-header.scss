@@ -47,7 +47,8 @@
 
   .main-header--open {
     position: fixed;
-    z-index: 999;
+    z-index: 1000;
+    background-color: #ffffff;
   }
 
   .main-header--open .main-header__cross {
