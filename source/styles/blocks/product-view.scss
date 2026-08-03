@@ -25,7 +25,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%, #ffffff 100%);
+    background: linear-gradient(180deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%, #ffffff 100%), url("../../images/background-mobile-index@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -51,7 +53,7 @@
   }
 
   .product-wrapper-text {
-    position: relative;
+    padding-left: 90px;
   }
 
   .product-view__text {
@@ -65,6 +67,7 @@
     color: #000000;
     text-transform: uppercase;
     text-align: start;
+    width: 450px;
   }
 
   .product-wrapper-image {
@@ -73,13 +76,13 @@
   }
 
   .product-wrapper {
-    padding-left: 90px;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-view {
-    background-color: #ffffff;
+    background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
   }
 
   .product-view__title {
@@ -104,9 +107,13 @@
     background-color: #ffffff;
     color: #000000;
     text-transform: uppercase;
+    width: 450px;
   }
 
   .product-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
   }
 }
