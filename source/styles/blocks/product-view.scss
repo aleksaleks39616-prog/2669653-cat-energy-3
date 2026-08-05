@@ -82,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .product-view {
-    background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+    background: linear-gradient(to right, #ffffff 56%, rgba(104, 183, 56, 0.85) 50%);
   }
 
   .product-view__title {
@@ -108,6 +108,7 @@
     color: #000000;
     text-transform: uppercase;
     width: 450px;
+    padding-bottom: 170px;
   }
 
   .product-wrapper {
@@ -115,5 +116,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
+  }
+
+  .product-wrapper-text {
+    width: 450px;
+    padding-bottom: 80px;
   }
 }
