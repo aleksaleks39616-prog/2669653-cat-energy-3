@@ -118,6 +118,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    padding-top: 55px;
+    padding-bottom: 29px;
+  }
+
   .main-header--index {
     padding-top: 55px;
     padding-bottom: 29px;
