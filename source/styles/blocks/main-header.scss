@@ -118,14 +118,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .main-header--index {
     padding-top: 55px;
     padding-bottom: 29px;
     position: relative;
     z-index: 1;
   }
 
-  .main-header::before {
+  .main-header--index::before {
     content: "";
     position: absolute;
     top: 0;
