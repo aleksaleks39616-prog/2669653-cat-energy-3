@@ -81,8 +81,35 @@
     bottom: 545px;
     left: 90px;
   }
-}
 
+  .button-plus {
+    background-color: #ffffff;
+    background-image: url("../../icons/stack.svg#plus");
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-position: center;
+  }
+
+  .button--grey {
+    color: #444444;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    display: block;
+    width: 250px;
+    padding: 12px 24px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 37px;
+    margin-top: auto;
+    margin-bottom: 40px;
+  }
+}
 
 @media (min-width: $desktop-width) {
   .button--long {

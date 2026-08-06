@@ -5,19 +5,21 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 
 .banner::before {
   content: "";
-  display: block;
   background-image: url("../../icons/icon-gift.svg");
   background-repeat: no-repeat;
-  background-size: 78px 80px;
-  height: auto;
-  background-position: center;
+  display: block;
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  left: 101px;
+  top: 60px;
 }
-
 
 .banner__text {
   font-family: "Lato", "Arial", sans-serif;
@@ -37,15 +39,13 @@
 
 @media (min-width: $tablet-width) {
   .banner {
-    background-image: url("../../icons/icon-gift.svg");
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/background-tablet-catalog@2x.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 80px 82px;
-    background-position-x: 77px;
-    background-position-y: 57px;
-    color: #ffffff;
-    background-color: rgba(104, 183, 56, 0.85);
-    width: 707px;
-    height: 200px;
+    position: relative;
   }
 
   .banner__text {
@@ -59,21 +59,28 @@
     text-align: center;
     align-items: center;
     margin: 0;
-    padding: 71px 125px 69px 264px;
+    padding: 71px 125px 69px 425px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .banner {
-    background-image: url("../../icons/icon-gift.svg");
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../../images/background-desktop-catalog@2x.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 80px 83px;
-    background-position-x: 83px;
-    background-position-y: 56px;
-    color: #ffffff;
-    background-color: rgba(104, 183, 56, 0.85);
+    position: relative;
     width: 245px;
-    height: 288px;
+    min-height: 288px;   /* ✅ min-height вместо height */
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .banner__text {
@@ -83,7 +90,24 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    padding: 185px 42px 43px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-align: center;
+    width: 161px;
+    height: 60px;
+    margin-bottom: 43px;
+  }
+
+  .banner::before {
+    content: "";
+    background-image: url("../../icons/icon-gift.svg");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    top: 60px;
+    left: 82px;
   }
 }
