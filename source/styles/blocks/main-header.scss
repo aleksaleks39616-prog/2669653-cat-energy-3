@@ -121,6 +121,22 @@
   .main-header {
     padding-top: 55px;
     padding-bottom: 29px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 694px;
+    background:
+      linear-gradient(to right, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%),
+      url("../../images/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    width: calc(50% - 87px);
+    background-position: left top, right top;
   }
 
   .main-header__inner {
@@ -128,9 +144,12 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
   }
 
   .main-header__cross {
     display: none;
   }
 }
+

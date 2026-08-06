@@ -85,6 +85,7 @@
     background: linear-gradient(to right, #ffffff 56%, rgba(104, 183, 56, 0.85) 50%);
   }
 
+
   .product-view__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
@@ -116,6 +117,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     position: relative;
+    z-index: 1;
   }
 
   .product-wrapper-text {
