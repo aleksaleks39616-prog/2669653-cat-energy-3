@@ -6,7 +6,31 @@
   font-weight: 400;
   line-height: 36px;
   margin-bottom: 41px;
+  position: relative;
 }
+
+.catalog-product__title::before {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  width: 100vw;
+  height: 1px;
+  top: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.catalog-product__title::after {
+  content: "";
+  position: absolute;
+  background-color: #ebebeb;
+  width: 100vw;
+  height: 1px;
+  bottom: -27px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .catalog-product__link {
   display: flex;
@@ -66,6 +90,7 @@
   display: flex;
   flex-direction: column;
   gap: 17px;
+  padding-bottom: 35px;
 }
 
 .catalog-product__top {

@@ -119,15 +119,21 @@
   }
 
   .button--programm {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
     background-color: #68b738;
     color: #ffffff;
     text-transform: uppercase;
-    width: 242px;
-    padding: 10px 26px;
+    width: 235px;
+    padding: 13px 22px 10px;
     display: block;
     box-sizing: border-box;
-    bottom: 210px;
     position: absolute;
+    bottom: 166px;
+    height: 54px;
   }
 
 

@@ -15,8 +15,8 @@
 
 <body class="page-body">
 
-  <header class="main-header main-header--index">
-    <div class=" container">
+  <header class="main-header main-header--close">
+    <div class=" container main-open">
       <div class="main-header__inner">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
@@ -45,11 +45,10 @@
             </li>
           </ul>
         </nav>
+
       </div>
     </div>
-  </header>
-  <main class="main-container">
-    <section class="product-view ">
+    <section class="product-view">
 
       <div class="container">
         <div class="product-wrapper">
@@ -59,7 +58,7 @@
             <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
 
           </div>
-          <picture>
+          <picture class="product-view__image">
             <source type="image/png" media="(min-width:1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
             <img class="hero-image" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
@@ -70,11 +69,14 @@
 
       </div>
     </section>
+  </header>
+  <main class="main-container">
     <section class="advantages container">
       <ul class="advantages__list">
         <li class="advantages__item  advantages__item--slim">
           <h2 class="advantages__title">Похудение</h2>
           <p class="advantages__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <span class="advantages__description__line"></span>
           <a class="advantages__link" href="#">КАТАЛОГ SLIM</a>
         </li>
         <li class="advantages__item advantages__item--pro">

@@ -6,10 +6,11 @@
   font-weight: 400;
   line-height: 40px;
   padding: 0;
+  margin-top: 1px;
 }
 
 .product-details__list {
-  padding: 0;
+  padding: 0 0 10px;
 }
 
 .product-details__text {
@@ -19,6 +20,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  height: 51px;
 }
 
 .product-details__item {
