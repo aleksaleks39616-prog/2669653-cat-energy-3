@@ -133,18 +133,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
+  .main-header-index {
     padding-top: 75px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     position: relative;
   }
 
-  .main-header::before {
+  .main-header-index::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -7px;
     width: 50%;
 
     background:
@@ -155,7 +155,7 @@
       ),
       url("../../images/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%, 720px 694px;
+    background-size: cover;
     z-index: 0;
   }
 
@@ -168,6 +168,11 @@
     position: relative;
     z-index: 2;
   }
+
+  .main-header__wrapper {
+    margin-top: -28px;
+  }
+
 
   .main-header__cross {
     display: none;

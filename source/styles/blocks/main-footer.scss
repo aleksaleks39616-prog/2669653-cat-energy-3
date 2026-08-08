@@ -1,5 +1,7 @@
 .main-footer__contacts {
   display: flex;
+  margin-bottom: 26px;
+  margin-top: 26px;
 }
 
 .main-footer__contacts--grey {
@@ -24,6 +26,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding-left: 24px;
 }
 
 .main-footer__map-iframe {
