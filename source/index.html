@@ -121,56 +121,48 @@
     </section>
 
     <section class="stats">
-      <div class="container">
-        <h2 class="stats__title">Живой пример</h2>
-        <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="stats-table">
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">
-                5 КГ
-              </dt>
-              <dd class="stats__description">снижение веса</dd>
+      <div class="container stats__container">
+        <div class="stats__content">
+          <h2 class="stats__title">Живой пример</h2>
+          <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
+          <div class="stats-table">
+            <dl class="stats__list">
+              <div class="stats__item">
+                <dt class="stats__number">5 КГ</dt>
+                <dd class="stats__description">снижение веса</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">60 ДНЕЙ</dt>
+                <dd class="stats__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <div class="stats__money">
+              <span class="stats__money-price">ЗАТРАТЫ НА ПИТАНИЕ:</span>
+              <span class="stats__money-value">15 000 РУБ.</span>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number">
-                60 ДНЕЙ
-              </dt>
-              <dd class="stats__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <div class="stats__money">
-            <span class="stats__money-price">
-              ЗАТРАТЫ НА ПИТАНИЕ:
-            </span>
-            <span class="stats__money-value">15 000 РУБ.
-
-            </span>
-
           </div>
         </div>
+
+        <div class="slider">
+          <div class="slider__slide slider__slide--active">
+            <div class="slider__picture">
+              <picture class="slider-pictures slider-pictures--before">
+                <source type="image/png" media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Большой кот" width="280" height="256">
+              </picture>
+              <picture class="slider-pictures slider-pictures--after">
+                <source type="image/png" media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Маленький кот" width="280" height="256">
+              </picture>
+            </div>
+          </div>
+          <button class="slider__button slider__button--change" type="button">
+            <span class="visually-hidden">Изменить изображение</span>
+          </button>
+        </div>
+
       </div>
     </section>
-
-    <div class="slider">
-      <div class="container">
-        <div class="slider__slide slider__slide--active">
-          <div class="slider__picture">
-
-            <picture class="slider-pictures slider-pictures--before">
-              <source type="image/png" media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__image slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Большой кот" width="280" height="256">
-            </picture>
-            <picture class="slider-pictures slider-pictures--after">
-              <source type="image/png" media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__image slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Маленький кот" width="280" height="256">
-            </picture>
-
-          </div>
-        </div>
-        <button class="slider__button slider__button--change" type="button"><span class="visually-hidden">Изменить изображение</span></button>
-      </div>
-    </div>
     <footer class="main-footer">
       <div class="main-footer__contacts container">
         <span class="main-footer__contacts-text">Приглашаем к сотрудничеству дилеров!</span>

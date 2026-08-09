@@ -107,6 +107,7 @@
     height: 512px;
   }
 
+
   .slider-pictures {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -133,5 +134,27 @@
   .slider__button {
     height: 512px;
     transform: translateX(278px);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    flex-shrink: 0;
+    width: 560px;
+    background-color: #f2f2f2;;
+  }
+
+  .slider__picture {
+    background-color: #f2f2f2;;
+  }
+
+  .slider-pictures--after {
+
+    background-color: #f2f2f2;;
+  }
+
+  .slider-pictures--before {
+
+    background-color: #f2f2f2;
   }
 }
