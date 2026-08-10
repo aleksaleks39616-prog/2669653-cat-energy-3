@@ -6,6 +6,7 @@
   font-weight: 400;
   line-height: 36px;
   margin-bottom: 41px;
+  padding-top: 17px;
   position: relative;
 }
 
@@ -18,16 +19,16 @@
   height: 1px;
   background-color: #d9d9d9;
   transform: translateX(-50%);
-  width: 100%;
+  width: 100vw;
 }
 
 
 .catalog-product__link {
-  display: flex;
-  height: 100px;
-  width: 84px;
   justify-content: center;
   align-items: flex-end;
+  width: 139px;
+  height: 100%;
+  display: flex;
 }
 
 
@@ -77,29 +78,31 @@
 }
 
 .catalog-product__top {
-  display: grid;
   grid-template-columns: auto 1fr;
-  gap: 36px;
+  gap: 0;
+  display: grid;
 }
 
 .catalog-product__info {
-  display: flex;
   flex-direction: column;
   gap: 8px;
+  display: flex;
 }
 
 
 .catalog-product__item-more-product {
-  list-style: none;
   position: relative;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3px;
 }
 
 
 .catalog-product__item {
-  display: flex;
   flex-direction: column;
-  gap: 17px;
-  padding-bottom: 35px;
+  gap: 21px;
+  display: flex;
   position: relative;
 }
 
@@ -108,7 +111,7 @@
   content: "";
   position: absolute;
   background-color: #ebebeb;
-  width: 100%;
+  width: 100vw;
   height: 1px;
   top: -15px;
   left: 50%;
@@ -119,7 +122,7 @@
   content: "";
   position: absolute;
   background-color: #ebebeb;
-  width: 100%;
+  width: 100vw;
   height: 1px;
   top: -15px;
   left: 50%;
@@ -138,14 +141,15 @@
 }
 
 .catalog-product__ltem-title-show {
-  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  text-transform: uppercase;
+  padding-top: 10px;
 }
 
 .catalog-product__attribute-row {
@@ -162,6 +166,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+  padding-bottom: 7px;
+  margin-top: -2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -316,7 +322,6 @@
     object-fit: contain;
   }
 
-
   .catalog-product__item::after,
   .catalog-product__item-more-product::after,
   .catalog-product__item-more-product::before,
@@ -435,5 +440,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
+  }
+
+  .catalog-product__item::after,
+  .catalog-product__item-more-product::after,
+  .catalog-product__item-more-product::before,
+  .catalog-product__title::after {
+    display: none;
   }
 }

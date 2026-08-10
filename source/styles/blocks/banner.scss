@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  padding: 186px 61px 43px 58px;
 }
 
 
@@ -28,7 +29,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  padding: 186px 61px 43px 58px;
   display: flex;
   width: 165px;
   text-align: center;
@@ -46,6 +46,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    padding: 71px 125px 69px 425px;
   }
 
   .banner__text {
@@ -59,7 +60,6 @@
     text-align: center;
     align-items: center;
     margin: 0;
-    padding: 71px 125px 69px 425px;
   }
 }
 
@@ -73,10 +73,10 @@
     background-repeat: no-repeat;
     position: relative;
     width: 245px;
-    min-height: 288px;   /* ✅ min-height вместо height */
+    min-height: 288px;
     flex-shrink: 0;
     flex-grow: 0;
-
+    padding: 182px 42px 43px;
     display: flex;
     align-items: flex-end;
     justify-content: center;

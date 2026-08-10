@@ -48,8 +48,14 @@
 }
 
 .additional-product__list {
-  list-style: none;
   padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.additional-product__item {
+  margin-bottom: 16px;
 }
 
 .additional-product__wrapper {
