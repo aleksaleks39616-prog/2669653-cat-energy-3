@@ -98,7 +98,7 @@
   }
 
   .stats {
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff 0 550px, #f2f2f2 267px 100%);
   }
 
   .stats__text {
@@ -216,13 +216,12 @@
   }
 
   .stats__money {
-    display: flex;
-    gap: 63px;
-    margin-top: 55px;
-    margin-bottom: 75px;
-    text-align: start;
+    gap: 64px;
+    margin-top: 44px;
+    margin-bottom: 76px;
+    margin-left: 2px;
     padding: 0;
-    margin-left: 0;
+    display: flex;
   }
 
   .stats__text {
@@ -237,30 +236,34 @@
   }
 
   .stats__number {
-    font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 37px;
+    margin-left: 14px;
   }
 
   .stats__description {
-    font-family: "Lato", "Arial", sans-serif;
     color: #444444;
+    background-color: #f2f2f2;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
-    background-color: #f2f2f2;
+    width: 201px;
   }
 
   .stats__list {
-    gap: 43px;
+    gap: 51px;
   }
 
   .stats__item {
-    width: 162px;
+    width: 125px;
+    margin-top: 21px;
+    padding-left: 13px;
   }
 
   .stats__price {
@@ -277,7 +280,7 @@
   .stats-table {
     display: grid;
     justify-content: start;
-    margin-top: 69px;
+    margin-top: 31px;
   }
 }
 

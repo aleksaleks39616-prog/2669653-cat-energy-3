@@ -1,7 +1,7 @@
 
 .social {
   background-color: #f2f2f2;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .social__wrapper {
@@ -73,6 +73,9 @@
   display: block;
   width: 27px;
   height: 34px;
+  position: absolute;
+  left: 253px;
+  top: 0;
 }
 
 .social__htmlacademy-link {
@@ -81,7 +84,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  padding-bottom: 40px;
+  position: relative;
+  padding-bottom: 46px;
+  padding-top: 6px;
 }
 
 .social__logo-link {
