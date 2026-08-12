@@ -89,7 +89,13 @@
   mask-position: center;
   mask-size: contain;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
+
+.slider__button::after:hover {
+  background-color: #68b738;
+}
+
 
 @media (min-width: $tablet-width) {
   .slider {

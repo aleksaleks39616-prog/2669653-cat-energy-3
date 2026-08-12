@@ -1,6 +1,7 @@
 .main-footer__contacts {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  margin-top: 15px;
 }
 
 .main-footer__contacts--grey {
@@ -30,7 +31,7 @@
 }
 
 .main-footer__map-iframe {
-  display: block;
+  display: none;
   position: absolute;
   border: none;
   width: 100%;
@@ -39,6 +40,10 @@
 
 .main-footer__map-img {
   display: block;
+}
+
+.main-footer__map {
+  margin-top: 22px;
 }
 
 @media (min-width: $tablet-width) {

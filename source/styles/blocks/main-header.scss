@@ -1,6 +1,6 @@
 @media (max-width: $mobile-width-only) {
   .main-header {
-    padding-top: 13px;
+    padding-top: 5px;
   }
 
   .main-header__navigation {
@@ -125,11 +125,15 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 53px;
   }
 
   .main-header__cross {
     display: none;
+  }
+
+  .main-header {
+    padding-top: 25px;
   }
 }
 

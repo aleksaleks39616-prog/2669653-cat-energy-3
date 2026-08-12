@@ -43,6 +43,7 @@
   padding: 10px 64px;
   display: block;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .button-plus {
@@ -74,12 +75,24 @@
     color: #ffffff;
     text-transform: uppercase;
     width: 242px;
-    padding: 10px 26px;
+    padding: 13px 26px;
     display: block;
     box-sizing: border-box;
     position: absolute;
-    bottom: 545px;
+    bottom: 551px;
+    height: 48px;
     left: 90px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .button--programm:hover {
+    background-color: #5eaa2f;
+  }
+
+  .button--programm:active {
+    background-color: #5eaa2f;
+    opacity: 0.3;
   }
 
   .button-plus {
