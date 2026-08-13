@@ -1,6 +1,6 @@
 @media (max-width: $mobile-width-only) {
   .main-header {
-    padding-top: 10px;
+    padding-top: 13px;
   }
 
   .main-header__navigation {
@@ -160,7 +160,7 @@
       ),
       url("../../images/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: 0;
   }
 

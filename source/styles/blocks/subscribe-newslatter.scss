@@ -75,6 +75,27 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    padding-left: 40px;
+  }
+
+  .subscribe-newslatter__title::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #68b738;
+    width: 456px;
+    right: -20px;
+    top: 52px;
+  }
+
+  .subscribe-newslatter__title::before {
+    content: "";
+    background-color: #68b738;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 59px;
+    left: -28px;
   }
 
   .subscribe-newslatter__description {

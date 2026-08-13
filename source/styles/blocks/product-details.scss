@@ -73,10 +73,20 @@
     display: grid;
   }
 
+  .product-details__item::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    display: block;
+    flex-shrink: 0;
+  }
+
   .product-details__list {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 37px 153px;
+    gap: 153px 45px;
   }
 
   .product-details__text {
@@ -95,7 +105,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 60px;
-    padding: 0 20px;
+    padding-top: 10px;
   }
 }
 

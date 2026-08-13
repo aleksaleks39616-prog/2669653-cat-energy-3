@@ -98,31 +98,34 @@
   }
 
   .button-plus {
-    background-color: #ffffff;
-    background-image: url("../../icons/stack.svg#plus");
+    color: #d3d3d3;
+    background-image: url("../icons/stack.svg#plus");
+    background-position: center;
     border: none;
     width: 60px;
     height: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 19px;
+    margin-left: 127px;
   }
 
   .button--grey {
+    font-family: "Oswald", "Arial", sans-serif;
     color: #444444;
     box-sizing: border-box;
-    background-color: #f2f2f2;
-    display: block;
-    width: 250px;
-    padding: 12px 24px;
-    border: none;
     text-align: center;
-    font-size: 14px;
     text-transform: uppercase;
-    text-decoration: none;
-    margin-left: 37px;
+    background-color: #f2f2f2;
+    border: none;
+    width: 250px;
     margin-top: auto;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
+    margin-left: 31px;
+    padding: 8px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
   }
 }
 

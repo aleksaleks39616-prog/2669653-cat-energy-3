@@ -96,11 +96,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 60px;
+    margin-top: 108px;
   }
 
   .stats {
-    background: linear-gradient(#ffffff 0 550px, #f2f2f2 267px 100%);
+    background: linear-gradient(#ffffff 0 605px, #f2f2f2 267px 100%);
   }
+
 
   .stats__text {
     font-family: "Lato", "Arial", sans-serif;
@@ -128,8 +130,9 @@
     font-weight: 400;
     line-height: 14px;
     background-color: #ffffff;
-    top: 63px;
     position: absolute;
+    top: 85px;
+    width: 126px;
   }
 
   .stats__list {
@@ -143,7 +146,7 @@
     align-items: center;
     row-gap: 7px;
     width: 124px;
-    padding: 15px 10px 25px;
+    padding: 38px 18px 25px;
   }
 
 
@@ -183,14 +186,7 @@
 
 @media (min-width: $desktop-width) {
   .stats {
-    background:
-      linear-gradient(
-        to bottom,
-        #ffffff 0,
-        #ffffff 267px,
-        #f2f2f2 267px,
-        #f2f2f2 100%
-      );
+    background: linear-gradient(#ffffff 0 267px, #f2f2f2 267px 100%);
   }
 
   .stats__title {
