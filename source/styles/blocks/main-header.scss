@@ -1,4 +1,8 @@
 @media (max-width: $mobile-width-only) {
+  .main-header {
+    padding-top: 13px;
+  }
+
   .main-header__navigation {
     display: none;
   }
@@ -45,15 +49,26 @@
     display: none;
   }
 
-  .main-header--open {
+  .main-header--open .main-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+
+
+  /* .main-header--open {
     background-color: #ffffff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: auto;
     z-index: 1000;
   }
+    */
 
   .main-header--open .main-header__cross {
     background-image: url("../../icons/cross.svg");
@@ -78,10 +93,11 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 100vw;
     height: 1px;
     background-color: #e0e0e0;
+    left: 50%;
+    transform: translateX(-56%);
   }
 }
 
@@ -109,40 +125,45 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 53px;
   }
 
   .main-header__cross {
     display: none;
   }
+
+  .main-header {
+    padding-top: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
-    padding-top: 55px;
-    padding-bottom: 29px;
-  }
-
-  .main-header--index {
-    padding-top: 55px;
-    padding-bottom: 29px;
+  .main-header-index {
+    padding-top: 75px;
+    padding-bottom: 5px;
     position: relative;
-    z-index: 1;
   }
 
-  .main-header--index::before {
+  .main-header-index::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    height: 694px;
+    bottom: -7px;
+    width: 50%;
+
     background:
-      linear-gradient(to right, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%),
+      linear-gradient(
+        90deg,
+        rgba(104, 183, 56, 0.85) 0%,
+        rgba(104, 183, 56, 0.85) 100%
+      ),
       url("../../images/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    width: calc(50% - 87px);
-    background-position: left top, right top;
+    background-size: contain;
+    z-index: 0;
   }
+
 
   .main-header__inner {
     display: flex;
@@ -153,8 +174,15 @@
     z-index: 2;
   }
 
+  .main-header__wrapper {
+    margin-top: -28px;
+  }
+
+  .main-header--catalog {
+    padding-top: 20px;
+  }
+
   .main-header__cross {
     display: none;
   }
 }
-

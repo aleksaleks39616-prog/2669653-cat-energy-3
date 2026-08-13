@@ -15,8 +15,8 @@
 
 <body class="page-body">
 
-  <header class="main-header main-header--index">
-    <div class=" container">
+  <header class="main-header main-header--close main-header-index">
+    <div class=" container main-open">
       <div class="main-header__inner">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
@@ -45,11 +45,10 @@
             </li>
           </ul>
         </nav>
+
       </div>
     </div>
-  </header>
-  <main class="main-container">
-    <section class="product-view ">
+    <section class="product-view">
 
       <div class="container">
         <div class="product-wrapper">
@@ -59,10 +58,10 @@
             <p class="product-view__text">ЗАНЯЛСЯ СОБОЙ? ЗАЙМИСЬ КОТОМ!</p>
 
           </div>
-          <picture>
+          <picture class="product-view__image">
             <source type="image/png" media="(min-width:1440px)" width="552" height="499" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" width="709" height="609" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
-            <img class="hero-image" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
+            <img class="product-view__img" src="images/hero-image-mobile@1x.png" width="280" height="270" srcset="images/hero-image-mobile@2x.png 2x" alt="Изображение товара на главной странице">
           </picture>
           <a class="button button--programm" href="#">Подобрать программу</a>
 
@@ -70,6 +69,8 @@
 
       </div>
     </section>
+  </header>
+  <main class="main-container">
     <section class="advantages container">
       <ul class="advantages__list">
         <li class="advantages__item  advantages__item--slim">
@@ -119,64 +120,56 @@
     </section>
 
     <section class="stats">
-      <div class="container">
-        <h2 class="stats__title">Живой пример</h2>
-        <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="stats-table">
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">
-                5 КГ
-              </dt>
-              <dd class="stats__description">снижение веса</dd>
+      <div class="container stats__container">
+        <div class="stats__content">
+          <h2 class="stats__title">Живой пример</h2>
+          <p class="stats__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день</p>
+          <div class="stats-table">
+            <dl class="stats__list">
+              <div class="stats__item">
+                <dt class="stats__number">5 КГ</dt>
+                <dd class="stats__description">снижение веса</dd>
+              </div>
+              <div class="stats__item">
+                <dt class="stats__number">60 ДНЕЙ</dt>
+                <dd class="stats__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <div class="stats__money">
+              <span class="stats__money-price">ЗАТРАТЫ НА ПИТАНИЕ:</span>
+              <span class="stats__money-value">15 000 РУБ.</span>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number">
-                60 ДНЕЙ
-              </dt>
-              <dd class="stats__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <div class="stats__money">
-            <span class="stats__money-price">
-              ЗАТРАТЫ НА ПИТАНИЕ:
-            </span>
-            <span class="stats__money-value">15 000 РУБ.
-
-            </span>
-
           </div>
         </div>
+        <div class="slider">
+          <div class="slider__picture">
+            <div class="slider__image-wrapper slider__image-wrapper--before">
+              <picture class="slider-pictures slider-pictures--before">
+                <source type="image/png" media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Большой кот" width="280" height="256">
+              </picture>
+            </div>
+
+            <div class="slider__image-wrapper slider__image-wrapper--after">
+              <picture class="slider-pictures slider-pictures--after">
+                <source type="image/png" media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                <img class="slider__image slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Маленький кот" width="280" height="256">
+              </picture>
+            </div>
+          </div>
+          <button class="slider__button" type="button">
+            <span class="visually-hidden">Показать результат до/после</span>
+          </button>
+        </div>
+      </div>
       </div>
     </section>
-
-    <div class="slider">
-      <div class="container">
-        <div class="slider__slide slider__slide--active">
-          <div class="slider__picture">
-
-            <picture class="slider-pictures slider-pictures--before">
-              <source type="image/png" media="(min-width:768px)" srcset="images/cat-before-tablet@1x.png, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__image slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Большой кот" width="280" height="256">
-            </picture>
-            <picture class="slider-pictures slider-pictures--after">
-              <source type="image/png" media="(min-width:768px)" srcset="images/cat-after-tablet@1x.png, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__image slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Маленький кот" width="280" height="256">
-            </picture>
-
-          </div>
-        </div>
-        <button class="slider__button slider__button--change" type="button"><span class="visually-hidden">Изменить изображение</span></button>
-      </div>
-    </div>
     <footer class="main-footer">
       <div class="main-footer__contacts container">
-        <p class="main-footer__contacts-text">Приглашаем
-          к сотрудничеству
-          дилеров!</p>
-        <p class="main-footer__contacts-adress">ул. Большая
+        <span class="main-footer__contacts-text">Приглашаем <br> к сотрудничеству дилеров!</span>
+        <span class="main-footer__contacts-adress">ул. Большая
           Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+          Санкт-Петербург</span>
       </div>
       <div class="main-footer__map">
         <iframe class="main-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" title="Карта с указанием адреса" allowfullscreen>
@@ -184,7 +177,7 @@
         <picture>
           <source type="image/png" media="(min-width:1440px)" srcset="images/location-desktop@1x.png, images/location-desktop@2x.png 2x" width="1440" height="400">
           <source type="image/png" media="(min-width:768px)" srcset="images/location-tablet@1x.png, images/location-tablet@2x.png 2x" width="768" height="400">
-          <img class="main-footer__map-img" src="images/location-mobile@1x.png" srcset="images/location-mobile@2x.png 2x" alt="Карта с указанием адреса" width="320" height="362">
+          <img class="main-footer__map-img" src="images/location-mobile@1x.png" srcset="images/location-mobile@1x.png 1x" alt="Карта с указанием адреса" width="320" height="362">
         </picture>
       </div>
       <div class="social">
