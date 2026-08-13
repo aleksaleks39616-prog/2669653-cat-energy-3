@@ -29,33 +29,44 @@
 }
 
 
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+}
+
 .social__link::before {
   content: "";
-  fill: #666666;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
 }
 
 .social__link--vkontakte::before {
-  background-image: url("../../icons/vkontakte.svg");
-  display: block;
-  width: 28px;
-  height: 22px;
+  mask-image: url("../../icons/vkontakte.svg");
 }
 
+
 .social__link--youtube::before {
-  background-image: url("../../icons/youtube.svg");
-  display: block;
-  width: 28px;
-  height: 22px;
+  mask-image: url("../../icons/youtube.svg");
 }
 
 .social__link--telegram::before {
-  background-image: url("../../icons/telegram.svg");
-  display: block;
-  width: 28px;
-  height: 22px;
+  mask-image: url("../../icons/telegram.svg");
+}
+
+.social__link:hover::before,
+.social__link:focus::before {
+  background-color: #68b738;
+}
+
+.social__link:active::before {
+  background-color: #68b738;
+  opacity: 0.3;
 }
 
 .social__list {
@@ -65,17 +76,6 @@
   justify-content: center;
   padding: 0;
   margin-top: 40px;
-}
-
-.social__htmlacademy-link::after {
-  content: "";
-  background-image: url("../../icons/logo-html.svg");
-  display: block;
-  width: 27px;
-  height: 34px;
-  position: absolute;
-  left: 253px;
-  top: 0;
 }
 
 .social__htmlacademy-link {
@@ -89,11 +89,42 @@
   padding-top: 6px;
 }
 
+.social__htmlacademy-link::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  position: absolute;
+  left: 253px;
+  top: 0;
+
+  background-color: #666666;
+  mask-image: url("../../icons/logo-html.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.social__htmlacademy-link:hover::after,
+.social__htmlacademy-link:focus::after {
+  background-color: #68b738;
+}
+
+.social__htmlacademy-link:active {
+  opacity: 0.3;
+}
+
+.social__htmlacademy-link:active::after {
+  background-color: #68b738;
+  opacity: 0.3;
+}
+
 .social__logo-link {
   justify-content: center;
   display: flex;
   margin-bottom: 40px;
 }
+
 
 @media (min-width: $tablet-width) {
   .social {
@@ -175,6 +206,11 @@
     display: block;
     width: 27px;
     height: 34px;
+    left: 145px;
+  }
+
+  .social-text {
+    margin-right: 50px;
   }
 
   .social__htmlacademy-link {

@@ -23,7 +23,7 @@
 }
 
 .product-wrapper-text {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -86,6 +86,10 @@
   .product-wrapper {
     position: relative;
   }
+
+  .product-view__img {
+    transform: translateY(-17px);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -132,7 +136,7 @@
   }
 
   .product-view__image {
-    transform: translateX(-83px);
+    transform: translate(-87px, 27px);
   }
 }
 

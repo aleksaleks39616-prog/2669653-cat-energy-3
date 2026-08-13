@@ -53,7 +53,7 @@
   }
 
   .main-footer__map-iframe {
-    display: block;
+    display: none;
     border: none;
     width: 100%;
     height: 400px;
@@ -84,7 +84,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__map-iframe {
-    display: block;
+    display: none;
     border: none;
     width: 100%;
     height: 400px;

@@ -46,7 +46,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    padding: 71px 125px 69px 425px;
+    padding: 116px 125px 72px 422px;
   }
 
   .banner__text {
@@ -57,9 +57,15 @@
     font-weight: 400;
     line-height: 20px;
     width: 165px;
-    text-align: center;
+    text-align: left;
     align-items: center;
     margin: 0;
+  }
+
+  .banner::before {
+
+    left: 79px;
+    top: 103px;
   }
 }
 
