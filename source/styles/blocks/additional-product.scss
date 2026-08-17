@@ -10,35 +10,22 @@
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 32px;
-  padding-top: 30px;
+  padding-right: 40px;
+  width: fit-content;
   position: relative;
   background-color: #ffffff;
-  display: inline-block;
-  z-index: 0;
 }
 
 .additional-product__title::before {
   content: "";
-  position: absolute;
   z-index: -1;
-  background-color: #ffffff;
-  top: 45px;
-  height: 3px;
-  left: -20px;
-  right: -40px;
-}
-
-.additional-product__title::after {
-  content: "";
-  position: absolute;
-  z-index: -2;
   background-color: #68b738;
-  top: 45px;
   width: 100vw;
-  height: 3px;
-  left: -20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 
 .additional-product__item-group {
   display: flex;
@@ -109,9 +96,19 @@
     font-weight: 400;
     line-height: 32px;
     margin-bottom: 36px;
-    position: relative;
     padding-left: 40px;
-    padding-top: 50px;
+    position: relative;
+  }
+
+  .additional-product__title::after {
+    content: "";
+    background-color: #68b738;
+    width: 100vw;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
   }
 
 
@@ -120,7 +117,11 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: 13px;
+    padding-top: 11px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
+
 
   .additional-product__header {
     font-family: "Oswald", "Arial", sans-serif;
@@ -157,10 +158,9 @@
   }
 
   .additional-product__list {
-    padding-top: 11px;
-    padding-left: 38px;
-    padding-right: 38px;
+
     list-style: none;
+    border: 1px solid #cdcdcd;
   }
 
   .additional-product__wrapper {
@@ -178,11 +178,16 @@
   .additional-product__title {
     font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
-    font-size: 24px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 40px;
     margin-bottom: 36px;
+    padding-left: 0;
+  }
+
+  .additional-product__title::after {
+    right: calc(100% + 43px);
   }
 
   .additional-product__item-group {
@@ -196,10 +201,10 @@
   .additional-product__header {
     font-family: "Oswald", "Arial", sans-serif;
     color: #222222;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     width: 300px;
   }
@@ -208,10 +213,10 @@
     font-family: "Lato", "Arial", sans-serif;
     justify-content: center;
     color: #444444;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 20px;
     width: 220px;
   }
 
@@ -230,6 +235,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    border: none;
   }
 
   .additional-product__grid {
