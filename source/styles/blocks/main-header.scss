@@ -145,6 +145,7 @@
     position: relative;
   }
 
+
   .main-header-index::before {
     content: "";
     position: absolute;
@@ -182,6 +183,7 @@
     position: relative;
     z-index: 2;
   }
+
 
   .main-header__wrapper {
     margin-top: -28px;
