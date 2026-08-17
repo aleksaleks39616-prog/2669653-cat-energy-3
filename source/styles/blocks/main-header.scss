@@ -1,6 +1,7 @@
 @media (max-width: $mobile-width-only) {
-  .main-header {
+  .main-header-menu {
     padding-top: 13px;
+    padding-bottom: 10px;
   }
 
   .main-header__navigation {
@@ -158,9 +159,17 @@
         rgba(104, 183, 56, 0.85) 0%,
         rgba(104, 183, 56, 0.85) 100%
       ),
-      url("../../images/index-background-desktop.jpg");
+      url("../../images/index-background-desktop.jpg"),
+      linear-gradient(
+        to right,
+        #4c4b50 0%,
+        #4c4b50 100%
+      );
+
+
     background-repeat: no-repeat;
     background-size: contain;
+
     z-index: 0;
   }
 
