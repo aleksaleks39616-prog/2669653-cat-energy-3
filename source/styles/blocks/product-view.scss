@@ -6,7 +6,6 @@
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  padding-top: 6px;
 }
 
 .product-view__text {
@@ -19,12 +18,8 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-.product-wrapper-text {
-  padding-top: 10px;
-}
 
 @media (max-width: $mobile-width-only) {
   .product-view {
