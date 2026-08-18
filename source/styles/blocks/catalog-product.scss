@@ -5,9 +5,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 41px;
-  padding-top: 17px;
+  margin: 0 0 41px;
   position: relative;
+}
+
+.catalog-product {
+  padding-top: 36px;
 }
 
 .catalog-product__title::after {
@@ -24,11 +27,11 @@
 
 
 .catalog-product__link {
-  justify-content: center;
-  align-items: flex-end;
-  width: 139px;
-  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  min-height: 112px;
 }
 
 
@@ -64,9 +67,10 @@
 .catalog-product__list {
   padding: 0;
   list-style: none;
+  margin: 0;
 }
 
-.catalog-product__ltem-title {
+.catalog-product__item-title {
   font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 16px;
@@ -74,19 +78,24 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  width: 76px;
+  max-width: 80px;
+  margin: 0;
 }
 
 .catalog-product__top {
-  grid-template-columns: auto 1fr;
-  gap: 0;
   display: grid;
+  grid-template-columns: 140px 1fr;
+  column-gap: 0;
+  align-items: start;
+  margin-bottom: 12px;
+  min-height: 112px;
 }
 
 .catalog-product__info {
-  flex-direction: column;
-  gap: 8px;
   display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 3px;
 }
 
 
@@ -101,9 +110,10 @@
 
 .catalog-product__item {
   flex-direction: column;
-  gap: 21px;
   display: flex;
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 
@@ -140,7 +150,7 @@
   transform: translateX(-50%);
 }
 
-.catalog-product__ltem-title-show {
+.catalog-product__item-title-show {
   color: #111111;
   text-align: center;
   text-transform: uppercase;
@@ -152,13 +162,19 @@
   padding-top: 10px;
 }
 
+.catalog-product__attributes {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
 .catalog-product__attribute-row {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.catalog-product__ltem-text-show {
+.catalog-product__item-text-show {
   font-family: "Lato", "Arial", sans-serif;
   color: #444444;
   text-align: center;
@@ -169,6 +185,7 @@
   padding-bottom: 7px;
   margin-top: -2px;
 }
+
 
 @media (min-width: $tablet-width) {
   .catalog-product__title {
@@ -247,7 +264,7 @@
     padding-right: 37px;
   }
 
-  .catalog-product__ltem-title {
+  .catalog-product__item-title {
     font-family: "Oswald", "Arial", sans-serif;
     color: #000000;
     font-size: 20px;
@@ -293,7 +310,7 @@
   }
 
 
-  .catalog-product__ltem-title-show {
+  .catalog-product__item-title-show {
     font-family: "Oswald", "Arial", sans-serif;
     color: #111111;
     text-align: center;
@@ -307,7 +324,7 @@
   }
 
 
-  .catalog-product__ltem-text-show {
+  .catalog-product__item-text-show {
     font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     text-align: center;
@@ -427,7 +444,7 @@
   }
 
 
-  .catalog-product__ltem-title-show {
+  .catalog-product__item-title-show {
     font-family: "Oswald", "Arial", sans-serif;
     color: #111111;
     text-align: center;
@@ -440,7 +457,7 @@
   }
 
 
-  .catalog-product__ltem-text-show {
+  .catalog-product__item-text-show {
     font-family: "Lato", "Arial", sans-serif;
     color: #444444;
     text-align: center;

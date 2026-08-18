@@ -114,12 +114,17 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 13px;
 }
 
 
 @media (min-width: $tablet-width) {
   .main-header__toggle {
     display: none;
+  }
+
+  .main-header-menu {
+    padding-top: 24px;
   }
 
   .main-header__inner {
@@ -132,24 +137,21 @@
   .main-header__cross {
     display: none;
   }
-
-  .main-header {
-    padding-top: 25px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header-index {
-    padding-top: 75px;
-    padding-bottom: 5px;
     position: relative;
+  }
+
+  .main-header-menu {
+    padding-top: 77px;
   }
 
 
   .main-header-index::before {
     content: "";
     position: absolute;
-    background-color: #64a73c;
     top: 0;
     right: 0;
     bottom: -2px;

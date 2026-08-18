@@ -1,7 +1,7 @@
 .main-footer__contacts {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 .main-footer__contacts--grey {
@@ -41,9 +41,6 @@
   display: block;
 }
 
-.main-footer__map {
-  margin-top: 22px;
-}
 
 @media (min-width: $tablet-width) {
   .main-footer__contacts {
