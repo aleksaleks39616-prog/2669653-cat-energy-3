@@ -57,12 +57,12 @@
 
 @media (min-width: $tablet-width) {
   .button--product {
-    width: 250px;
+    width: 100%;
+    min-height: 40px;
+    margin-top: auto;
+    margin-bottom: 12px;
     box-sizing: border-box;
-    padding-top: 11px;
-    margin-bottom: 36px;
   }
-
 
   .button--long {
     box-sizing: border-box;
