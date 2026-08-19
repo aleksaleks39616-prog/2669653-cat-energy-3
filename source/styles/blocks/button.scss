@@ -17,13 +17,12 @@
 .button--product {
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 25px;
 }
 
 .button--long {
   box-sizing: border-box;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .button--grey {
@@ -58,17 +57,17 @@
 
 @media (min-width: $tablet-width) {
   .button--product {
-    width: 250px;
+    width: 100%;
+    min-height: 40px;
+    margin-top: auto;
+    margin-bottom: 12px;
     box-sizing: border-box;
-    padding-top: 11px;
-    margin-bottom: 36px;
   }
-
 
   .button--long {
     box-sizing: border-box;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0;
     grid-column: 1/-1;
   }
 
@@ -103,7 +102,7 @@
     border: none;
     width: 60px;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 14px;
     margin-bottom: 19px;
     margin-left: 127px;
   }
@@ -118,7 +117,7 @@
     border: none;
     width: 250px;
     margin-top: auto;
-    margin-bottom: 29px;
+    margin-bottom: 46px;
     margin-left: 31px;
     padding: 8px 24px;
     font-size: 16px;
@@ -130,9 +129,13 @@
 
 @media (min-width: $desktop-width) {
   .button--long {
+    width: 244px;
+    margin: 0;
     box-sizing: border-box;
-    width: 240px;
-    margin-top: 10px;
+  }
+
+  .button-plus {
+    margin-left: 84px;
   }
 
   .button--programm {
@@ -149,14 +152,21 @@
     display: block;
     box-sizing: border-box;
     position: absolute;
-    bottom: 145px;
+    bottom: 104px;
     height: 54px;
   }
 
 
   .button--product {
-    width: 169px;
     box-sizing: border-box;
+    width: 169px;
+    height: 40px;
+    margin: auto auto 0;
+  }
+
+  .button--grey {
+    width: 169px;
+    margin-bottom: 40px;
   }
 }
 

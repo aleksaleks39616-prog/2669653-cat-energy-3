@@ -86,7 +86,7 @@
   .product-details__list {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 153px 45px;
+    gap: 137px 48px;
   }
 
   .product-details__text {
@@ -96,6 +96,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    margin-top: 8px;
+    margin-left: 5px;
+    width: 245px;
   }
 
   .product-details__title {
@@ -106,6 +109,7 @@
     font-weight: 400;
     line-height: 60px;
     padding-top: 10px;
+    padding-bottom: 25px;
   }
 }
 
@@ -123,7 +127,7 @@
   .product-details__list {
     padding: 0;
     display: flex;
-    gap: 80px;
+    gap: 73px;
     flex-wrap: wrap;
   }
 
