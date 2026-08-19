@@ -10,7 +10,7 @@
 }
 
 .catalog-product {
-  padding-top: 36px;
+  padding-top: 27px;
 }
 
 .catalog-product__title::after {
@@ -433,6 +433,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 245px;
   }
 
   .catalog-product__ltem-title {

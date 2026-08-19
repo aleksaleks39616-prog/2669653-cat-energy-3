@@ -1,7 +1,11 @@
 
 .social {
   background-color: #f2f2f2;
-  padding-top: 50px;
+  padding-top: 65px;
+}
+
+.social-catalog {
+  padding-top: 52px;
 }
 
 .social__wrapper {
@@ -129,7 +133,7 @@
 @media (min-width: $tablet-width) {
   .social {
     background-color: #f2f2f2;
-    padding-top: 55px;
+    padding-top: 61px;
     padding-bottom: 40px;
   }
 
@@ -196,8 +200,8 @@
     display: flex;
     gap: 24px;
     justify-content: center;
-    padding: 0;
-    margin: 0;
+    margin-left: 41px;
+    margin-top: 3px;
   }
 
   .social__htmlacademy-link::after {
@@ -206,7 +210,8 @@
     display: block;
     width: 27px;
     height: 34px;
-    left: 145px;
+    left: 138px;
+    top: -3px;
   }
 
   .social-text {
