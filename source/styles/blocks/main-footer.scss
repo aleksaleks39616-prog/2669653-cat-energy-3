@@ -45,15 +45,16 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__contacts {
-    display: grid;
     grid-template-columns: repeat(2, 140px);
-    justify-content: space-between;
     align-items: flex-start;
-    padding: 38px 90px 56px 70px;
+    display: grid;
+    gap: 329px;
+    padding-bottom: 60px;
   }
 
   .main-footer__contacts--grey {
-    margin-top: 38px;
+    margin-top: 55px;
+    padding-bottom: 55px;
   }
 
 
@@ -73,7 +74,14 @@
     line-height: 26px;
     text-transform: uppercase;
     width: 170px;
+    padding-top: 31px;
+    padding-left: 40px;
   }
+
+  .main-footer__contacts-adress-catalog {
+    margin-top: 16px;
+  }
+
 
   .main-footer__contacts-city {
     display: block;
@@ -90,7 +98,8 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
-    margin-top: 14px;
+    padding-top: 30px;
+    padding-left: 39px;
   }
 }
 
